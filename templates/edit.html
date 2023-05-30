@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <title>Edit Task</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Task</h1>
+      <form>
+        <div class="form-group">
+          <label for="task-name">Sarlavha</label>
+          <input type="text" id="task-name" placeholder="Sarlavha kiriting">
+          <label for="task-details">Batafsil</label>
+          <input type="text" id="task-details" placeholder="Batafsil malumot">
+        </div>
+        <div class="form-group">
+          <label for="status">Holati</label>
+          <select id="status">
+            <option>Bajarildi</option>
+            <option>Bajarilmadi</option>
+            <option>Boshlanmadi</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Save</button>
+        <a href="#" class="btn cancel" style="text-decoration: none;">Cancel</a>
+      </form>
+    </div>
+  </body>
+</html> 
